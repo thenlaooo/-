@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">
+    <script src="https://kit.fontawesome.com/65694932fa.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="https://raw.githubusercontent.com/fastapi-admin/fastapi-admin/dev/images/favicon.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7MFB9RV5E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-T7MFB9RV5E');
+    </script>
+    <script defer data-domain="fastapi-admin.long2ice.io" src="https://plausible.long2ice.io/js/plausible.js"></script>
+
+
+    <title></title>
+</head>
+
+
+<body>
+
+    <div class="wrapper min-vh-100">
+        <aside class="navbar navbar-vertical navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+
+                    <h1 class="navbar-brand navbar-brand-autodark">
+                        <a href="/admin">
+                            <img
+                                    src="https://preview.tabler.io/static/l ogo-white.svg"
+                                    width="110"
+                                    height="32"
+                                    alt="Tabler"
+                                    class="navbar-brand-image"
+                            />
+                        </a>
+                    </h1>
+
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-menu"
+                >
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="navbar-nav pt-lg-3">
+
+                            <li class="nav-item
+active
+ ">
+    <a class="nav-link" href="/admin" target="_self">
+                              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fas fa-home"></i>
+                              </span>
+        <span class="nav-link-title">
+                                Dashboard
+                              </span>
+    </a>
+</li>
+                            <li class="nav-item ">
+    <a class="nav-link" href="/admin/admin/list">
+                              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fas fa-user"></i>
+                              </span>
+        <span class="nav-link-title">
+                                Admin
+                              </span>
+    </a>
+</li>    <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle " href="#"
+       data-bs-toggle="dropdown"
+       role="button">
+                                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fas fa-bars"></i>
+                                  </span>
+        <span class="nav-link-title">
+                                    Content
+                                    </span>
+    </a>
+    <div class="dropdown-menu ">
+        <div class="dropdown-menu-columns">
+            <div class="dropdown-menu-column">
+
+
+                        <a href="/admin/product/list"
+                           class="dropdown-item ">Product</a>
+
+
+
+                        <a href="/admin/category/list"
+                           class="dropdown-item ">Category</a>
+
+
+            </div>
+        </div>
+    </div>
+</li>
+                            <li class="nav-item ">
+    <a class="nav-link" href="/admin/config/list">
+                              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fas fa-cogs"></i>
+                              </span>
+        <span class="nav-link-title">
+                                Config
+                              </span>
+    </a>
+</li>
+                            <li class="nav-item  ">
+    <a class="nav-link" href="https://github.com/fastapi-admin/fastapi-admin" target="_blank">
+                              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fab fa-github"></i>
+                              </span>
+        <span class="nav-link-title">
+                                Github
+                              </span>
+    </a>
+</li>
+                            <li class="nav-item  ">
+    <a class="nav-link" href="https://fastapi-admin-docs.long2ice.io" target="_blank">
+                              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fas fa-file-code"></i>
+                              </span>
+        <span class="nav-link-title">
+                                Documentation
+                              </span>
+    </a>
+</li>
+                            <li class="nav-item  ">
+    <a class="nav-link" href="https://fastapi-admin-pro.long2ice.io/admin/login" target="_blank">
+                              <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="far fa-heart"></i>
+                              </span>
+        <span class="nav-link-title">
+                                Pro Version
+                              </span>
+    </a>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="page-wrapper min-vh-100">
+            <header
+                    class="navbar navbar-expand-md navbar-light d-none d-lg-flex d-print-none"
+            >
+                <div class="container-fluid">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-nav flex-row order-md-last">
+
+                            <div class="nav-item me-3 dropdown d-none d-md-flex">
+    <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1"
+       aria-label="Show notifications">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="icon icon-tabler icon-tabler-language"
+             width="24" height="24"
+             viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" fill="none"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M5 7h7m-2 -2v2a5 8 0 0 1 -5 8m1 -4a7 4 0 0 0 6.7 4"></path>
+            <path d="M11 19l4 -9l4 9m-.9 -2h-6.2"></path>
+        </svg>
+    </a>
+    <div class="dropdown-menu  dropdown-menu-arrow">
+        <a class="dropdown-item"
+           href="/admin/?language=zh_CN">
+            <span class="me-2">🇨🇳</span>简体中文
+        </a>
+        <a class="dropdown-item"
+           href="/admin/?language=en_US">
+            <span class="me-2">🇺🇸</span>English
+        </a>
+        <a class="dropdown-item"
+           href="/admin/?language=fr_FR">
+            <span class="me-2">🇫🇷</span>Français
+        </a>
+        <a class="dropdown-item"
+           href="/admin/?language=fa_IR">
+            <span class="me-2">🇮🇷</span>Persian
+        </a>
+        <a class="dropdown-item"
+           href="/admin/?language=es_PY">
+            <span class="me-2">🇵🇾</span>Español
+        </a>
+    </div>
+</div>
+
+
+                            <div class="nav-item dropdown">
+    <a
+            href="#"
+            class="nav-link d-flex lh-1 text-reset p-0"
+            data-bs-toggle="dropdown"
+    >
+              <span class="avatar avatar-sm">
+                <img src="/static/uploads/digital_camera_photo-1080x675.jpg" alt=""/>
+              </span>
+        <div class="d-none d-xl-block ps-2">
+            <div>admin</div>
+        </div>
+    </a>
+    <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+        <a
+                href="/admin/password"
+                class="dropdown-item"
+        >Update password</a
+        >
+        <div class="dropdown-divider"></div>
+        <a
+                href="/admin/logout"
+                class="dropdown-item"
+        >Logout</a
+        >
+    </div>
+</div>
+
+                    </div>
+                    <div></div>
+                </div>
+            </header>
+            <div class="container-fluid">
+                <div class="page-header d-print-none">
+
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <div class="page-pretitle">overview</div>
+                                <h2 class="page-title">Dashboard</h2>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <div class="page-body flex-grow-1">
+                <div class="container-fluid">
+                    <div class="row row-deck row-cards">
+
+    <div class="row">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        Stargazers over time
+                    </div>
+                    <img src="https://starchart.cc/fastapi-admin/fastapi-admin.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+
+                <footer class="footer footer-transparent d-print-none">
+    <div class="container">
+        <div class="row text-center align-items-center flex-row-reverse">
+            <div class="col-lg-auto ms-lg-auto">
+                <ul class="list-inline list-inline-dots mb-0">
+                    <li class="list-inline-item">
+                        <a
+                                href="https://fastapi-admin.github.io"
+                                class="link-secondary"
+                                target="_blank"
+                        >Documentation</a
+                        >
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/fastapi-admin/fastapi-admin/blob/dev/LICENSE" target="_blank"
+                           class="link-secondary">License</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a
+                                href="https://github.com/fastapi-admin/fastapi-admin-pro"
+                                target="_blank"
+                                class="link-secondary"
+                                rel="noopener"
+                        >Source code</a
+                        >
+                    </li>
+                    <li class="list-inline-item">
+                        <a
+                                href="https://sponsor.long2ice.io"
+                                target="_blank"
+                                class="link-secondary"
+                                rel="noopener"
+                        >
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="icon text-pink icon-filled icon-inline"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                        d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                                ></path>
+                            </svg>
+                            Sponsor
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                    <li class="list-inline-item">
+                        Copyright © 2021 - 2024
+                        <a href="https://github.com/MishaSok" target="_blank" class="link-secondary"
+                        >JuicexCom</a
+                        >. All rights reserved.
+                    </li>
+                    <li class="list-inline-item">
+                        <a
+                                target="_blank"
+
+                                rel="noopener"
+                        >v1.0.0</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>ФСО России</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="MyraStudio" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/logo-fso-russia.png">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            <div class="main-content">
+
+                <header id="page-topbar">
+                    <div class="header">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box d-flex align-items-left">
+                            <a href="index.html" class="logo">
+                                <img class="fso-logo" src="assets/images/logo-fso-russia.png">
+<!--                                <i class="mdi mdi-alpha-x-circle"></i>-->
+                                <span>
+                                    Академия ФСО России
+                                </span>
+                            </a>
+
+<!--                            <button type="button" class="btn btn-sm mr-2 font-size-16 d-lg-none header-item waves-effect waves-light" data-toggle="collapse" data-target="#topnav-menu-content">-->
+<!--                                <i class="fa fa-fw fa-bars"></i>-->
+<!--                            </button>-->
+                        </div>
+                        <div class="header__buttons">
+                            <div class="header__auth">
+                                <a href="http://127.0.0.1:8000/login">
+                                <button type="button" class="btn btn-secondary">Авторизация</button>
+                                </a>
+                                <a href="http://127.0.0.1:8000/register">
+                                    <button type="button" class="btn btn-secondary">Регистрация</button>
+                                </a>
+                            </div>
+
+                            <div class="dropdown d-inline-block ml-2">
+                                <button type="button" class="btn header-item waves-effect waves-light" id="page-header-user-dropdown"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-3.jpg"
+                                         alt="Header Avatar">
+                                    <span class="d-none d-sm-inline-block ml-1">Jamie D.</span>
+                                    <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                                        <span>Inbox</span>
+                                        <span>
+                                            <span class="badge badge-pill badge-info">3</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                                        <span>Profile</span>
+                                        <span>
+                                            <span class="badge badge-pill badge-warning">1</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                                        Settings
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                                        <span>Lock Account</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                                        <span>Log Out</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </header>
+                </div>
+        </div>
+
+            <div class="topnav">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+                            
+                            <div class="collapse navbar-collapse" id="topnav-menu-content">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/">
+                                            <i class="mdi mdi-view-dashboard mr-2"></i>Главная страница
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-format-underline mr-2"></i>Добавить<div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-components">
+                                            <a href="http://127.0.0.1:8000/add_nrsk" class="dropdown-item">Научная работа</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-google-pages mr-2"></i>Pages <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-pages">
+                                            <div class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Auth Pages <div class="arrow-down"></div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="topnav-auth">
+                                                    <a href="auth-login.html" class="dropdown-item">Login</a>
+                                                    <a href="auth-register.html" class="dropdown-item">Register</a>
+                                                    <a href="auth-recoverpw.html" class="dropdown-item">Recover Password</a>
+                                                    <a href="auth-lock-screen.html" class="dropdown-item">Lock Screen</a>
+                                                    <a href="auth-404.html" class="dropdown-item">Error 404</a>
+                                                    <a href="auth-500.html" class="dropdown-item">Error 500</a>
+                                                </div>
+                                            </div>
+                                            <a href="pages-invoice.html" class="dropdown-item">Invoice</a>
+                                            <a href="pages-starter.html" class="dropdown-item">Starter Page</a>
+                                            <a href="pages-maintenance.html" class="dropdown-item">Maintenance</a>
+                                            <a href="pages-faqs.html" class="dropdown-item">FAQs</a>
+                                            <a href="pages-pricing.html" class="dropdown-item">Pricing</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-charts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-poll mr-2"></i>Статистика <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-charts">
+                                            <a href="charts-morris.html" class="dropdown-item">Morris</a>
+                                            <a href="charts-google.html" class="dropdown-item">Google</a>
+                                            <a href="charts-chartjs.html" class="dropdown-item">Chartjs</a>
+                                            <a href="charts-sparkline.html" class="dropdown-item">Sparkline</a>
+                                            <a href="charts-knob.html" class="dropdown-item">Jquery Knob</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-forms" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-file-document-box-check-outline mr-2"></i>Forms <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-forms">
+                                            <a href="forms-elements.html" class="dropdown-item">Elements</a>
+                                            <a href="forms-plugins.html" class="dropdown-item">Plugins</a>
+                                            <a href="forms-validation.html" class="dropdown-item">Validation</a>
+                                            <a href="forms-mask.html" class="dropdown-item">Masks</a>
+                                            <a href="forms-quilljs.html" class="dropdown-item">Quilljs</a>
+                                            <a href="forms-uploads.html" class="dropdown-item">File Uploads</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-share-variant mr-2"></i>Другое <div class="arrow-down"></div>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                            <a href="charts-morris.html" class="dropdown-item">Об авторах</a>
+                                            <a href="charts-morris.html" class="dropdown-item">О приложении</a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>                
+
+               <div class="page-content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0 font-size-18">Главная страница</h4>
+
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">ФСО России</a></li>
+                                            <li class="breadcrumb-item active">Главная страница</li>
+                                        </ol>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>     
+
+
+
+
+
+
+
+
+
+                        <! -- -->
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Для чего нужно это приложение?</h5>
+                                        <p class="card-text">Это приложение позволит курсантам и преподавателям легко и быстро манипулировать
+                                        научными работами.</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Выпуск молодых офицеров академии</small>
+                                        </p>
+                                    </div>
+                                    <img class="card-img-bottom img-fluid" src="assets/images/main_page_img.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">Как использовать приложение?</h4>
+                                        <p class="card-subtitle mb-4">Простое руководство к использованию</p>
+
+                                        <ul class="nav nav-tabs mb-3">
+                                            <li class="nav-item">
+                                                <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                                    <i class="mdi mdi-home-variant d-lg-none d-block"></i>
+                                                    <span class="d-none d-lg-block">Пользователь</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                                                    <i class="mdi mdi-account-circle d-lg-none d-block"></i>
+                                                    <span class="d-none d-lg-block">НРСК</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                                    <i class="mdi mdi-settings-outline d-lg-none d-block"></i>
+                                                    <span class="d-none d-lg-block">Для чего это всё?</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div class="tab-pane" id="home">
+                                                <p>Для того чтобы пользоваться полным функционалом сайта требуется регистрация. Её должны проходить как курсанты, так и преподаватели. Это нужно для того чтобы вы могли привязать НРСК к своему собственному аккаунту.</p>
+                                                <p class="mb-0">Пользователи также имеют возможность просматривать некоторые НРСК, которые курсанты могут выложить в свободный доступ благодаря удобному функционалу. Конечно, ваши проекты хранятся на академическом сервере и никто кроме вас не сможет получить ним доступ.</p>
+                                            </div>
+                                            <div class="tab-pane show active" id="profile">
+                                                <p>Сайт предназначен для удобного управления вашими научными работами, которые вы регистрируете в академии.</p>
+                                                <p class="mb-0">После создания научной работы у вас появится возможность добавить своего преподавателя, чтобы он имел доступ к вашему проекту. Естественно, вы можете в любое время как скачать, так и загрузить ваши проекты благодаря встроенному функционалу на панели управления проектом.</p>
+                                            </div>
+                                            <div class="tab-pane" id="settings">
+                                                <p>Это приложение - способ избавиться от проблем с перекидыванием файлов преподавателю, хранения научных работ на флешках (которые часто ломаются), а также возможность удобно работать сразу с несколькими НРСК одновременно. Чудесно, не правда ли?</p>
+                                            </div>
+                                        </div>
+
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
+
+
+
+
+
+
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="text-center text-lg-left">
+                                    2024 © Академия Федеральной Службы Охраны Россиийской Федерации.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-right d-none d-lg-block">
+                                    Разработан JuicexCom
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/simplebar.min.js"></script>
+
+         <!-- Morris Js-->
+        <!--<script src="plugins/morris-js/morris.min.js"></script>-->
+        <!-- Raphael Js-->
+        <!--<script src="plugins/raphael/raphael.min.js"></script>-->
+
+        <!-- Morris Custom Js-->
+        <script src="assets/pages/dashboard-demo.js"></script>
+
+
+        <!-- App js -->
+        <script src="assets/js/theme.js"></script>
+
+    </body>
+
+</html>

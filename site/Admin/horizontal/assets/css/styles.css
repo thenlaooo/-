@@ -1,0 +1,25 @@
+.fso-logo {
+	width: 50px;
+
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__buttons {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.header__auth {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.page_404 {
+	align-items: center;
+}
